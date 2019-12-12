@@ -109,6 +109,8 @@ npm run start:dev
 node tests/helper/add_super.js
 ```
 
+> 执行之后会默认创建一个，账号：super, 密码为：123456 的账户。
+
 如果你安装遇到问题，可以参考 [Lin-CMS-Koa](http://doc.cms.7yue.pro/lin/start/) 文档，或者联系我。
 
 ## 其他文件
