@@ -9,7 +9,7 @@ module.exports = {
     include: ['.jpg', '.jpeg', '.gif', '.png', '.svg']
   },
   qiniu: {
-    bucket: 'personal-blog-img',
+    bucket: '',
     img: '',
     AK: '',
     SK: ''

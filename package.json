@@ -6,6 +6,7 @@
   "scripts": {
     "start:dev": "cross-env NODE_ENV=development nodemon",
     "start:prod": "cross-env NODE_ENV=production node app/starter.js",
+    "start:pm2": "cross-env NODE_ENV=production pm2 start app/starter.js",
     "prettier": "prettier --write app/**/*.js app/*.js app/**/**/*.js app/**/**/**/*.js tests/**/*.js && eslint app tests --fix"
   },
   "keywords": [

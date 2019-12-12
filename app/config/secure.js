@@ -2,12 +2,12 @@
 
 module.exports = {
   db: {
-    database: '',
+    database: 'personal_blog',
     host: 'localhost',
     dialect: 'mysql',
     port: 3306,
-    username: '',
-    password: '',
+    username: 'root',
+    password: 'q350413177',
     logging: true,
     timezone: '+08:00'
   },

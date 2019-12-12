@@ -1,19 +1,26 @@
 手里有糖个人博客
 =================
 
-* [个人博客简介](#%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%AE%80%E4%BB%8B)
-  * [完成功能](#%E5%AE%8C%E6%88%90%E5%8A%9F%E8%83%BD)
-  * [获取项目工程](#%E8%8E%B7%E5%8F%96%E9%A1%B9%E7%9B%AE%E5%B7%A5%E7%A8%8B)
-  * [安装依赖包](#%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96%E5%8C%85)
-  * [数据库配置](#%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE)
-  * [项目启动](#%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8)
-* [其他配置文件](#%E5%85%B6%E4%BB%96%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
+* [手里有糖个人博客](#%E6%89%8B%E9%87%8C%E6%9C%89%E7%B3%96%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2)
+  * [个人博客简介](#%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%AE%80%E4%BB%8B)
+    * [线上Demo](#%E7%BA%BF%E4%B8%8Ademo)
+    * [完成功能](#%E5%AE%8C%E6%88%90%E5%8A%9F%E8%83%BD)
+    * [获取项目工程](#%E8%8E%B7%E5%8F%96%E9%A1%B9%E7%9B%AE%E5%B7%A5%E7%A8%8B)
+    * [安装依赖包](#%E5%AE%89%E8%A3%85%E4%BE%9D%E8%B5%96%E5%8C%85)
+    * [数据库配置](#%E6%95%B0%E6%8D%AE%E5%BA%93%E9%85%8D%E7%BD%AE)
+    * [项目启动](#%E9%A1%B9%E7%9B%AE%E5%90%AF%E5%8A%A8)
+  * [其他文件](#%E5%85%B6%E4%BB%96%E6%96%87%E4%BB%B6)
+    * [状态码文件](#%E7%8A%B6%E6%80%81%E7%A0%81%E6%96%87%E4%BB%B6)
 
 
 
 ## 个人博客简介
 
 开发框架借鉴了 [Lin-CMS-Koa](https://github.com/TaleLin/lin-cms-koa) ，在这里非常感谢。
+
+### 线上Demo
+
+[手里有糖个人博客](http://sugar.whgjh.top)
 
 ### 完成功能
 
@@ -57,7 +64,7 @@ cd personal-blog-server-koa && yarn
 
 ``` javascript
 db: {
-    database: 'personal-blog',
+    database: 'personal_blog',
     host: 'localhost',
     dialect: 'mysql',
     port: 3306,
@@ -96,5 +103,19 @@ npm run start:dev
 
 
 
+欣喜之余，请你运行一下根目录下的`tests/helper/add_super.js`文件，我们会为在数据 库中新建一个超级管理员账户，方便你后续在前端登陆。
+
+``` javascript
+node tests/helper/add_super.js
+```
+
+如果你安装遇到问题，可以参考 [Lin-CMS-Koa](http://doc.cms.7yue.pro/lin/start/) 文档，或者联系我。
+
 ## 其他文件
+
+### 状态码文件
+
+``` javascript
+app/code.md
+```
 
