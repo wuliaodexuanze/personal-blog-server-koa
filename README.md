@@ -20,7 +20,8 @@
 
 ### 线上Demo
 
-[手里有糖个人博客](http://sugar.whgjh.top)
+[手里有糖个人博客](http://wayne.whgjh.top)
+[手里有糖个人博客CMS](http://sugar.whgjh.top)
 
 ### 完成功能
 

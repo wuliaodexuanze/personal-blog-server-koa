@@ -68,9 +68,7 @@ user.linPost(
     await logger('{user.username} 登录成功获取了令牌')(data, next);
     ctx.json({
       access_token: accessToken,
-      refresh_token: refreshToken,
-      avatar: user.avatar,
-      nickname: user.nickname
+      refresh_token: refreshToken
     });
   }
 );
